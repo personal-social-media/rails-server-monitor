@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  # mount RailsServerMonitor::Engine => '/'
+  mount RailsServerMonitor::Engine => '/'
 end
