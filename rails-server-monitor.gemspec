@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require_relative "lib/rails_server_monitor/version"
@@ -20,6 +22,7 @@ Gem::Specification.new do |spec|
 
   spec.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
+  spec.add_development_dependency "rubocop-rails_config"
   spec.add_dependency "rails", ">= 6.0.0", "< 7"
   spec.add_dependency "webpacker", ">=6.0.0.beta.7", "< 7.0.0"
 end

@@ -17,6 +17,7 @@ class RailsServerMonitorInstall < ActiveRecord::Migration[6.1]
       t.text :hdd_stats
       t.text :network_stats
       t.references :rails_server_monitor_server, null: false, foreign_key: true, index: { name: "rails_server_monitor_snapshots_on_server"}
+      t.timestamp :created_at, index: true
     end
   end
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_17_161500) do
+ActiveRecord::Schema.define(version: 2021_06_17_223852) do
 
   create_table "rails_server_monitor_server_snapshots", force: :cascade do |t|
     t.float "cpu_usage_percentage"
@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 2021_06_17_161500) do
     t.text "hdd_stats"
     t.text "network_stats"
     t.integer "rails_server_monitor_server_id", null: false
+    t.datetime "created_at"
+    t.index ["created_at"], name: "index_rails_server_monitor_server_snapshots_on_created_at"
     t.index ["rails_server_monitor_server_id"], name: "rails_server_monitor_snapshots_on_server"
   end
 

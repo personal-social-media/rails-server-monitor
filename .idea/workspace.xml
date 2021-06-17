@@ -2,13 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05b0c9e3-2252-417e-adbb-e3b3d34c5e4c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/rails-server-monitor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rails-server-monitor.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rakefile" beforeDir="false" afterPath="$PROJECT_DIR$/Rakefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/rails_server_monitor/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/rails_server_monitor/application_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/rails_server_monitor/home_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/rails_server_monitor/home_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/rails_server_monitor/application_record.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/rails_server_monitor/application_record.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/rails_server_monitor/server.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/rails_server_monitor/server.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/rails_server_monitor/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/rails_server_monitor/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/rails_server_monitor/application_record.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/rails_server_monitor/application_record.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/rails_server_monitor/home/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/rails_server_monitor/home/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/rails_server_monitor/install_generator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/rails_server_monitor/install_generator.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/rails_server_monitor.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rails_server_monitor.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/rails_server_monitor/engine.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rails_server_monitor/engine.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rails_server_monitor/version.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rails_server_monitor/version.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tasks/rails_server_monitor_tasks.rake" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tasks/rails_server_monitor_tasks.rake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails-server-monitor.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/rails-server-monitor.gemspec" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +39,16 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/tailwind.config.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/dummy/db/migrate/20210617161500_rails_server_monitor_install.rb" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/dummy/Gemfile" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/javascript/packs/rails-server-application.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/models/rails_server_monitor/server.rb" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/dummy/config/webpacker.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/models/rails_server_monitor/application_record.rb" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/postcss.config.js" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="1u4tqZ77iurhFDHgtjDfQE6y98q" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -38,15 +61,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../yaffle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/views/layouts" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/app/javascript/stylesheets" />
+      <recent name="$PROJECT_DIR$/config/webpack" />
+      <recent name="$PROJECT_DIR$/app/javascript/controllers" />
+      <recent name="$PROJECT_DIR$/dummy" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/helpers/rails_server_monitor" />
       <recent name="$PROJECT_DIR$/app/views/layouts/rails_server_monitor" />
       <recent name="$PROJECT_DIR$/lib/tasks" />
       <recent name="$PROJECT_DIR$/lib" />
@@ -165,7 +193,8 @@
       <option name="presentableId" value="Default" />
       <updated>1623936880695</updated>
       <workItem from="1623936882074" duration="1844000" />
-      <workItem from="1623944469948" duration="1982000" />
+      <workItem from="1623944469948" duration="6601000" />
+      <workItem from="1623951211593" duration="4584000" />
     </task>
     <servers />
   </component>

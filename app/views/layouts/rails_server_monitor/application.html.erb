@@ -5,6 +5,8 @@
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
 
+  <%= safe_render_js "rails-server-application", 'data-turbolinks-track': "reload" %>
+  <%= safe_render_css "rails-server-application", 'data-turbolinks-track': "reload" %>
 </head>
 <body>
 
