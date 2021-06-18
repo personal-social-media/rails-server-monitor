@@ -2,7 +2,9 @@ PATH
   remote: .
   specs:
     rails-server-monitor (0.1.0)
+      psm-ruby-stats (~> 1.0, >= 1.0.3)
       rails (>= 6.0.0, < 7)
+      sys-cpu (~> 1.0, >= 1.0.3)
       webpacker (>= 6.0.0.beta.7, < 7.0.0)
 
 GEM
@@ -67,7 +69,9 @@ GEM
     builder (3.2.4)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
+    diff-lcs (1.4.4)
     erubi (1.10.0)
+    ffi (1.15.3)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     i18n (1.8.10)
@@ -87,6 +91,8 @@ GEM
     parallel (1.20.1)
     parser (3.0.1.1)
       ast (~> 2.4.1)
+    psm-ruby-stats (1.0.3)
+      usagewatch (~> 0.0.7)
     racc (1.5.2)
     rack (2.2.3)
     rack-proxy (0.7.0)
@@ -123,6 +129,23 @@ GEM
     rake (13.0.3)
     regexp_parser (2.1.1)
     rexml (3.2.5)
+    rspec-core (3.10.1)
+      rspec-support (~> 3.10.0)
+    rspec-expectations (3.10.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.10.0)
+    rspec-mocks (3.10.2)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.10.0)
+    rspec-rails (5.0.1)
+      actionpack (>= 5.2)
+      activesupport (>= 5.2)
+      railties (>= 5.2)
+      rspec-core (~> 3.10)
+      rspec-expectations (~> 3.10)
+      rspec-mocks (~> 3.10)
+      rspec-support (~> 3.10)
+    rspec-support (3.10.2)
     rubocop (1.17.0)
       parallel (~> 1.10)
       parser (>= 3.0.0.0)
@@ -160,11 +183,14 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.4.2)
+    sys-cpu (1.0.3)
+      ffi (~> 1.1)
     thor (1.1.0)
     thread_safe (0.3.6)
     tzinfo (1.2.9)
       thread_safe (~> 0.1)
     unicode-display_width (2.0.0)
+    usagewatch (0.0.7)
     webpacker (6.0.0.pre.2)
       activesupport (>= 5.2)
       rack-proxy (>= 0.6.1)
@@ -180,6 +206,7 @@ PLATFORMS
 
 DEPENDENCIES
   rails-server-monitor!
+  rspec-rails
   rubocop-rails_config
   sqlite3
   webpacker

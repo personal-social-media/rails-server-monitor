@@ -1,0 +1,1 @@
+require_relative "../../../rails_server_monitor/engine"

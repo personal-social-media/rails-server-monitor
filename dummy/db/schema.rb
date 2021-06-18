@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_17_223852) do
+ActiveRecord::Schema.define(version: 2021_06_17_231525) do
 
   create_table "rails_server_monitor_server_snapshots", force: :cascade do |t|
     t.float "cpu_usage_percentage"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 2021_06_17_223852) do
     t.text "system_information"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["hostname"], name: "index_rails_server_monitor_servers_on_hostname"
   end
 
   add_foreign_key "rails_server_monitor_server_snapshots", "rails_server_monitor_servers"

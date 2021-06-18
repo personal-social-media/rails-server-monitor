@@ -1,7 +1,7 @@
 class RailsServerMonitorInstall < ActiveRecord::Migration[6.1]
   def change
     create_table :rails_server_monitor_servers do |t|
-      t.string :hostname
+      t.string :hostname, index: true
       t.datetime :last_seen_at
       t.string :custom_name
       t.text :custom_description

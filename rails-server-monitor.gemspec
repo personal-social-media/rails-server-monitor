@@ -22,7 +22,10 @@ Gem::Specification.new do |spec|
 
   spec.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
+  spec.add_development_dependency "rspec-rails"
   spec.add_development_dependency "rubocop-rails_config"
+  spec.add_dependency 'sys-cpu', '~> 1.0', '>= 1.0.3'
   spec.add_dependency "rails", ">= 6.0.0", "< 7"
   spec.add_dependency "webpacker", ">=6.0.0.beta.7", "< 7.0.0"
+  spec.add_dependency 'psm-ruby-stats', '~> 1.0', '>= 1.0.3'
 end
