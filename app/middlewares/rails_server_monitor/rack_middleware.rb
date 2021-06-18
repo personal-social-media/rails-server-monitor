@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module RailsServerMonitor
   class RackMiddleware
     def initialize(app)
@@ -9,6 +11,13 @@ module RailsServerMonitor
       return @app.call(request.env) if ignore_request?(request)
 
       server = RailsServerMonitor::ServerSetup.new.call
+      snapshot = RailsServerMonitor::TakeSnapshot.new(server)
+
+      if snapshot.can_take_snapshot?
+        snapshot.call
+
+        RailsServerMonitor::Cleanup.new.call
+      end
 
       @app.call(request.env)
     end
@@ -26,6 +35,10 @@ module RailsServerMonitor
       end.present?
 
       false
+    end
+
+    def config
+      RailsServerMonitor.config
     end
   end
 end

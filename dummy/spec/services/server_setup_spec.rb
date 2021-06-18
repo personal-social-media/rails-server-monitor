@@ -1,11 +1,16 @@
+# frozen_string_literal: true
+
 require "rails_helper"
 
-RSpec.describe RailsServerMonitor::ServerSetup do
+RSpec.describe RailsServerMonitor::TakeSnapshot do
+  let(:server) { create(:server) }
   subject do
-    described_class.new.call
+    described_class.new(server).call
   end
 
-  it "creates a server" do
-    subject
+  it "takes a snapshot" do
+    expect do
+      subject
+    end.to change { RailsServerMonitor::ServerSnapshot.count }.by(1)
   end
 end

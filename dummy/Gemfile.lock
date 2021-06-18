@@ -2,9 +2,10 @@ PATH
   remote: ..
   specs:
     rails-server-monitor (0.1.0)
-      psm-ruby-stats (~> 1.0, >= 1.0.3)
+      psm-ruby-stats (~> 1.0, >= 1.0.4)
       rails (>= 6.0.0, < 7)
       sys-cpu (~> 1.0, >= 1.0.3)
+      vidibus-sysinfo (~> 1.2)
       webpacker (>= 6.0.0.beta.7, < 7.0.0)
 
 GEM
@@ -78,6 +79,11 @@ GEM
     crass (1.0.6)
     diff-lcs (1.4.4)
     erubi (1.10.0)
+    factory_bot (6.2.0)
+      activesupport (>= 5.0.0)
+    factory_bot_rails (6.2.0)
+      factory_bot (~> 6.2.0)
+      railties (>= 5.0.0)
     ffi (1.15.3)
     foreman (0.87.2)
     globalid (0.4.2)
@@ -102,7 +108,7 @@ GEM
     nio4r (2.5.7)
     nokogiri (1.11.7-x86_64-linux)
       racc (~> 1.4)
-    psm-ruby-stats (1.0.3)
+    psm-ruby-stats (1.0.4)
       usagewatch (~> 0.0.7)
     puma (5.3.2)
       nio4r (~> 2.0)
@@ -163,6 +169,8 @@ GEM
     rspec-support (3.10.2)
     semantic_range (3.0.0)
     spring (2.1.1)
+    spring-commands-rspec (1.0.4)
+      spring (>= 0.9.1)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -180,6 +188,7 @@ GEM
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     usagewatch (0.0.7)
+    vidibus-sysinfo (1.2.0)
     web-console (4.1.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -201,6 +210,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
+  factory_bot_rails (~> 6.2)
   foreman
   jbuilder (~> 2.7)
   listen (~> 3.3)
@@ -210,6 +220,7 @@ DEPENDENCIES
   rails-server-monitor!
   rspec-rails
   spring
+  spring-commands-rspec (~> 1.0, >= 1.0.4)
   sqlite3 (~> 1.4)
   turbolinks (~> 5)
   tzinfo-data

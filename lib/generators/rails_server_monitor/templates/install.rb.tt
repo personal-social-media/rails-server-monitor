@@ -1,11 +1,17 @@
 class <%= migration_class_name %> < ActiveRecord::Migration<%= migration_version %>
   def change
+    create_table :rails_server_monitor_server_groups do |t|
+      t.string :name, null: false, index: { unique: true }
+      t.bigint :rails_server_monitor_servers, null: false, default: 0
+    end
+
     create_table :rails_server_monitor_servers do |t|
       t.string :hostname, index: true
       t.datetime :last_seen_at
       t.string :custom_name
       t.text :custom_description
       t.text :system_information
+      t.references :rails_server_monitor_server_group, null: true, foreign_key: true, index: { name: "rails_server_monitor_server_on_group"}
       t.timestamps
     end
 

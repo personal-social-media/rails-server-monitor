@@ -11,6 +11,13 @@ module RailsServerMonitor
       system_cpu_name
       system_cpu_cores
       system_cpu_frequency
+      system_ram_available_in_mb
+      system_hdd_available_in_gb
     ), coder: JSON
+
+    belongs_to :group, class_name: "RailsServerMonitor::ServerGroup", counter_cache: true, optional: true
+    has_many :server_snapshots, class_name: "RailsServerMonitor::ServerSnapshot",
+             foreign_key: :rails_server_monitor_server_id,
+             dependent: :delete_all
   end
 end

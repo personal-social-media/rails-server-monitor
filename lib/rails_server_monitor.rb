@@ -3,7 +3,10 @@
 require_relative "./rails_server_monitor/version"
 require_relative "./rails_server_monitor/engine"
 require_relative "./rails_server_monitor/configuration"
+require_relative "../app/middlewares/rails_server_monitor/rack_middleware"
 require "sys/cpu"
+require "rubystats_psm"
+require "vidibus-sysinfo"
 
 module RailsServerMonitor
   ROOT_PATH = Pathname.new(File.join(__dir__, ".."))
@@ -18,7 +21,7 @@ module RailsServerMonitor
 
     def config
       unless block_given?
-        return @configuration
+        return @configuration ||= Configuration.new
       end
 
       @configuration = Configuration.new
