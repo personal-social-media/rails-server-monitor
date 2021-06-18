@@ -29,4 +29,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rails", ">= 6.0.0", "< 7"
   spec.add_dependency "webpacker", ">=6.0.0.beta.7", "< 7.0.0"
   spec.add_dependency "psm-ruby-stats", "~> 1.0", ">= 1.0.4"
+  spec.add_dependency "view_component"
+  spec.add_dependency "groupdate"
+  spec.add_dependency "chartkick"
 end

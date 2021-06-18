@@ -2,10 +2,13 @@ PATH
   remote: .
   specs:
     rails-server-monitor (0.1.0)
+      chartkick
+      groupdate
       psm-ruby-stats (~> 1.0, >= 1.0.4)
       rails (>= 6.0.0, < 7)
       sys-cpu (~> 1.0, >= 1.0.3)
       vidibus-sysinfo (~> 1.2)
+      view_component
       webpacker (>= 6.0.0.beta.7, < 7.0.0)
 
 GEM
@@ -72,6 +75,7 @@ GEM
       zeitwerk (~> 2.3)
     ast (2.4.2)
     builder (3.2.4)
+    chartkick (4.0.4)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
     diff-lcs (1.4.4)
@@ -79,6 +83,8 @@ GEM
     ffi (1.15.3)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    groupdate (5.2.2)
+      activesupport (>= 5)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     loofah (2.10.0)
@@ -196,6 +202,8 @@ GEM
     unicode-display_width (2.0.0)
     usagewatch (0.0.7)
     vidibus-sysinfo (1.2.0)
+    view_component (2.34.0)
+      activesupport (>= 5.0.0, < 7.0)
     webpacker (6.0.0.pre.2)
       activesupport (>= 5.2)
       rack-proxy (>= 0.6.1)

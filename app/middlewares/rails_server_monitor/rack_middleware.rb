@@ -28,7 +28,7 @@ module RailsServerMonitor
       path = request.path
       return true if config.ignore_urls.detect do |url|
         if url.is_a?(String)
-          next path.include?(path)
+          next path == url
         elsif url.is_a?(Regexp)
           next url.match?(path)
         end

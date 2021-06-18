@@ -7,6 +7,9 @@ require_relative "../app/middlewares/rails_server_monitor/rack_middleware"
 require "sys/cpu"
 require "rubystats_psm"
 require "vidibus-sysinfo"
+require "view_component/engine"
+require "groupdate"
+require "chartkick"
 
 module RailsServerMonitor
   ROOT_PATH = Pathname.new(File.join(__dir__, ".."))

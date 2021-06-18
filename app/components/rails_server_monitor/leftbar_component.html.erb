@@ -1,0 +1,20 @@
+<div>
+  <div class="h-4">
+
+  </div>
+  <div class="sticky top-0 ">
+    <%= link_to "Rails Server Monitor", ctx.root_path,
+                class: "bg-blue-500 text-xl text-white p-2 w-full inline-block font-bold shadow-b text-center" %>
+  </div>
+
+  <div>
+    <% if groups.present? %>
+    <% else %>
+      <% servers.each do |server| %>
+        <div class="bg-grey-200 hover:bg-gray-100 my-2 p-1">
+          <%= link_to server.display_name, ctx.server_path(server), class: "w-full inline-block" %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

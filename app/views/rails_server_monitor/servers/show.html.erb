@@ -1,0 +1,133 @@
+<div class="p-2">
+ <div class="text-center text-2xl font-bold">
+   <%= @server.display_name %>
+ </div>
+
+
+  <div class="flex mt-4">
+    <%= content_tag :div, class: "#{@chart.today? ? "w-1/2" : "w-full"}" do %>
+      <%= line_chart @chart.render_chart %>
+    <% end %>
+
+    <% if @chart.today? && @chart.last_record.present? %>
+      <div class="w-1/2 p-2">
+        <div class="mb-2 text-xl">
+          Current server stats information:
+        </div>
+
+        <div class="flex">
+          <div class="grid grid-cols-2 gap-4 w-1/2">
+            <%= render(RailsServerMonitor::ServerTableRow.new(
+              title: "CPU Usage",
+              value: "#{@chart.last_record.cpu_usage_percentage} %"
+            )) %>
+
+
+            <%= render(RailsServerMonitor::ServerTableRow.new(
+              title: "Ram Used",
+              value: "#{@chart.last_record.ram_stats["used"]} MB"
+            )) %>
+
+            <%= render(RailsServerMonitor::ServerTableRow.new(
+              title: "Ram Free",
+              value: "#{@chart.last_record.ram_stats["free"]} MB"
+            )) %>
+          </div>
+          <div class="grid grid-cols-2 gap-4 w-1/2">
+            <%= render(RailsServerMonitor::ServerTableRow.new(
+              title: "HDD Used",
+              value: "#{@chart.last_record.hdd_stats["used"]} GB"
+            )) %>
+
+            <%= render(RailsServerMonitor::ServerTableRow.new(
+              title: "HDD Free",
+              value: "#{@chart.last_record.hdd_stats["free"]} GB"
+            )) %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="mt-20">
+    <div class="mb-2 text-xl">
+      Sever information:
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 w-1/2">
+      <%= render(RailsServerMonitor::ServerTableRow.new(
+        title: "Hostname",
+        value: @server.hostname
+      )) %>
+
+      <div class="bg-blue-300 text-gray-800 p-1">
+        Custom name:
+      </div>
+      <div class="p-1">
+        <%= @server.custom_name %>
+      </div>
+      <div class="bg-blue-300 text-gray-800 p-1">
+        Custom description:
+      </div>
+      <div class="p-1">
+        <%= @server.custom_description %>
+      </div>
+      <div class="mb-2 text-xl">
+        OS information
+      </div>
+      <div></div>
+
+      <div class="bg-blue-300 text-gray-800 p-1">
+        Operating system:
+      </div>
+      <div class="p-1">
+        <%= simple_format @server.system_os %>
+      </div>
+
+      <%= render(RailsServerMonitor::ServerTableRow.new(
+        title: "Kernel version",
+        value: @server.system_kernel_version
+      )) %>
+
+      <%= render(RailsServerMonitor::ServerTableRow.new(
+        title: "OS language",
+        value: @server.system_os_language
+      )) %>
+
+      <%= render(RailsServerMonitor::ServerTableRow.new(
+        title: "OS Time zone",
+        value: @server.system_os_timezone
+      )) %>
+
+      <div class="mb-2 text-xl">
+        CPU information
+      </div>
+      <div></div>
+
+      <%= render(RailsServerMonitor::ServerTableRow.new(
+        title: "CPU Model",
+        value: @server.system_cpu_name
+      )) %>
+
+      <%= render(RailsServerMonitor::ServerTableRow.new(
+        title: "CPU Codes",
+        value: @server.system_cpu_cores
+      )) %>
+
+      <%= render(RailsServerMonitor::ServerTableRow.new(
+        title: "CPU Frequency",
+        value: "#{@server.system_cpu_frequency} Mhz"
+      )) %>
+
+      <%= render(RailsServerMonitor::ServerTableRow.new(
+        title: "RAM",
+        value: "#{@server.system_ram_available_in_mb} MB"
+      )) %>
+
+      <%= render(RailsServerMonitor::ServerTableRow.new(
+        title: "Storage",
+        value: "#{@server.system_hdd_available_in_gb} GB"
+      )) %>
+    </div>
+  </div>
+</div>

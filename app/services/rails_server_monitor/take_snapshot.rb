@@ -40,7 +40,7 @@ module RailsServerMonitor
       end
 
       def cpu_usage_percentage
-        psm_helper.uw_cpuused
+        psm_helper.uw_cpuused.round
       end
 
       def ram_usage_percentage

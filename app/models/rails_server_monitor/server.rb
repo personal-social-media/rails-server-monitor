@@ -19,5 +19,9 @@ module RailsServerMonitor
     has_many :server_snapshots, class_name: "RailsServerMonitor::ServerSnapshot",
              foreign_key: :rails_server_monitor_server_id,
              dependent: :delete_all
+
+    def display_name
+      @display_name ||= custom_name.present? ? custom_name : hostname
+    end
   end
 end

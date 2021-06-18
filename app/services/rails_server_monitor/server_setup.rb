@@ -19,7 +19,7 @@ module RailsServerMonitor
 
     private
       def hostname
-        @hostname ||= `hostname`
+        @hostname ||= `hostname`.squish
       end
 
       def update_server
@@ -52,7 +52,7 @@ module RailsServerMonitor
       end
 
       def system_kernel_version
-        `uname -r`
+        `uname -r`.squish
       end
 
       def system_cpu_name
