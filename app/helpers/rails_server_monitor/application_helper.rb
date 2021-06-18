@@ -15,7 +15,7 @@ module RailsServerMonitor
         return javascript_packs_with_chunks_tag(name, **options)
       end
 
-      javascript_pack_tag(name, *options)
+      javascript_pack_tag(name, **options)
     end
 
     def safe_render_css(name, **options)

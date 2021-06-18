@@ -4,7 +4,7 @@
 /pkg/
 /tmp/
 .byebug_history
-public/
 tmp/
 node_modules/
 .idea/
+public/

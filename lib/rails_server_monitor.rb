@@ -10,13 +10,14 @@ require "vidibus-sysinfo"
 require "view_component/engine"
 require "groupdate"
 require "chartkick"
+require "webpacker"
 
 module RailsServerMonitor
   ROOT_PATH = Pathname.new(File.join(__dir__, ".."))
 
   class << self
     def webpacker
-      @webpacker ||= ::Webpacker::Instance.new(
+      @webpacker ||= Webpacker::Instance.new(
         root_path: RailsServerMonitor::Engine.root,
         config_path: RailsServerMonitor::Engine.root.join("config", "webpacker.yml")
       )
