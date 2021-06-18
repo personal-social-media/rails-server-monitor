@@ -24,6 +24,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "rspec-rails"
   spec.add_development_dependency "rubocop-rails_config"
+  spec.add_development_dependency "bundler"
   spec.add_development_dependency "bundler-audit"
   spec.add_dependency "sys-cpu", "~> 1.0", ">= 1.0.3"
   spec.add_dependency "vidibus-sysinfo", "~> 1.2"
