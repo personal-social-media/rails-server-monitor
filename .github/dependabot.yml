@@ -6,3 +6,7 @@ updates:
     schedule:
       interval: weekly
     vendor: true
+  - package-ecosystem: npm
+    directory: '/'
+    schedule:
+      interval: weekly
