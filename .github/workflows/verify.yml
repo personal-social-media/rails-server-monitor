@@ -46,6 +46,7 @@ jobs:
         run: |
           bundle config path vendor/bundle
           bundle install --jobs 4 --retry 3
+          cd dummy && bundle install --jobs 4 --retry 3
           bundle clean --force
       - name: Run tests
         run: |
