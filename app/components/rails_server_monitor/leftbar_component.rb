@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module RailsServerMonitor
   class LeftbarComponent < ViewComponent::Base
     attr_reader :ctx

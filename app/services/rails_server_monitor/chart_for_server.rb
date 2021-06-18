@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module RailsServerMonitor
   class ChartForServer
     attr_reader :server, :timeline

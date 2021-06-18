@@ -1,8 +1,9 @@
 # frozen_string_literal: true
+
 namespace :rails_server_monitor do
-  desc 'Install deps with yarn'
+  desc "Install deps with yarn"
   task :yarn_install do
-    Dir.chdir(File.join(__dir__, '..', '..')) do
+    Dir.chdir(File.join(__dir__, "..", "..")) do
       system "yarn install --no-progress --production"
     end
   end

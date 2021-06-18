@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module RailsServerMonitor
   class ServerTableRow < ViewComponent::Base
     attr_reader :title, :value
