@@ -19,3 +19,5 @@ namespace :rails_server_monitor do
     end
   end
 end
+
+task "assets:precompile" => "rails_server_monitor:compile"

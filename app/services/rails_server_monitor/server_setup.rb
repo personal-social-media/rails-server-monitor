@@ -40,7 +40,7 @@ module RailsServerMonitor
       end
 
       def system_os
-        File.read("/etc/lsb-release")
+        File.read("/etc/lsb-release") if File.exist?("/etc/lsb-release")
       end
 
       def system_os_language
