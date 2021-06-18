@@ -1,7 +1,7 @@
 PATH
   remote: ..
   specs:
-    rails-server-monitor (0.1.0)
+    rails-server-monitor (0.1.1)
       chartkick
       groupdate
       psm-ruby-stats (~> 1.0, >= 1.0.4)

@@ -49,7 +49,7 @@ jobs:
           bundle clean --force
       - name: Run tests
         run: |
-          bundle exec rspec --profile
+          cd dummy && bundle exec rake db:setup && bundle exec rspec --profile
           yarn eslint --ext .js --ext .jsx app/javascript
       - name: Run security checks
         run: |
