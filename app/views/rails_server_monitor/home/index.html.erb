@@ -1,3 +1,18 @@
-<div class="bg-red-300">
-  <h3>ok</h3>
+<div class="p-2">
+  <div class="bg-red-300 text-3xl p-2 text-gray-800">
+    Warnings
+  </div>
+
+  <div>
+    <%= render RailsServerMonitor::Warnings::HighCpuUsageComponent.new(ctx: self) %>
+  </div>
+
+  <div>
+    <%= render RailsServerMonitor::Warnings::LowMemoryComponent.new(ctx: self) %>
+  </div>
+
+
+  <div>
+    <%= render RailsServerMonitor::Warnings::LowDiskSpaceComponent.new(ctx: self) %>
+  </div>
 </div>

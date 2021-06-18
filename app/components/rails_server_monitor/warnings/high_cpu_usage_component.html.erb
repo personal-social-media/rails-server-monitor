@@ -1,0 +1,18 @@
+<div class="bg-gray-200 p-4">
+  <span class="mb-4 text-lg">High CPU Usage</span>
+
+  <div>
+    <% if scope.size == 0 %>
+      <div class="bg-green-500 text-white text-3xl p-4">
+        Everything is ok
+      </div>
+    <% else %>
+      <div class="grid grid-cols-6 gap-4">
+        <% scope.each do |snapshot| %>
+          <%= render(RailsServerMonitor::Warnings::WarningComponent.new(ctx: ctx, snapshot: snapshot,
+                                                                        warning: "#{snapshot.cpu_usage_percentage} % CPU USAGE"))%>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>

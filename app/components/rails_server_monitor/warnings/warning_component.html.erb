@@ -1,0 +1,13 @@
+<%= link_to ctx.snapshot_path(snapshot), class: "bg-red-300 p-1" do %>
+  <div class="text-center text-lg font-bold">
+    <%= snapshot.rails_server_monitor_server.display_name %>
+  </div>
+
+  <div>
+    <%= snapshot.created_at %>
+  </div>
+
+  <div>
+    <%= warning %>
+  </div>
+<% end %>

@@ -1,0 +1,18 @@
+<div class="p-2">
+  <div class="text-center text-2xl font-bold">
+    Snapshot #<%= @snapshot.id %>
+    (<%= link_to @snapshot.rails_server_monitor_server.display_name, server_path(@snapshot.rails_server_monitor_server), class: "text-blue-500" %>)
+  </div>
+
+  <div class="grid grid-cols-2 gap-4 w-1/2 mt-4">
+    <% @snapshot.attributes.except("id", "rails_server_monitor_server_id").each do |name, value| %>
+      <div>
+        <%= name.humanize %>
+      </div>
+
+      <div>
+        <%= value %>
+      </div>
+    <% end %>
+  </div>
+</div>
