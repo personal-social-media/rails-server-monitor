@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
 namespace :rails_server_monitor do
-  desc "Install deps with yarn"
+  desc "Install rails-server-monitor deps with yarn"
   task :yarn_install do
     Dir.chdir(File.join(__dir__, "..", "..")) do
       system "yarn install --no-progress --production"
     end
   end
 
-  desc "Compile JavaScript packs using webpack for production with digests"
+  desc "Compile rails-server-monitor JavaScript packs using webpack for production with digests"
   task compile: [:yarn_install, :environment] do
     Webpacker.with_node_env("production") do
       if RailsServerMonitor.webpacker.commands.compile
