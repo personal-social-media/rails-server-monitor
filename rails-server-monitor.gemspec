@@ -20,7 +20,10 @@ Gem::Specification.new do |spec|
   spec.metadata["source_code_uri"] = "https://github.com/personal-social-media/rails-server-monitor"
   spec.metadata["changelog_uri"] = "https://github.com/personal-social-media/rails-server-monitor"
 
-  spec.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  spec.files = Dir[
+    "{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md",
+    "package.json", "postcss.config.js", "babel.config.js", "tailwind.config.js", "yarn.lock"
+  ]
 
   spec.add_development_dependency "rspec-rails"
   spec.add_development_dependency "rubocop-rails_config"
