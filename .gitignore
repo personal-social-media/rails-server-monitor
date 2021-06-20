@@ -7,5 +7,6 @@
 tmp/
 node_modules/
 .idea/
-public/
+public/*
+!/public/.keep
 db/
