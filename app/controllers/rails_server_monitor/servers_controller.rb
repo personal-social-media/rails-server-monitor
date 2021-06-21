@@ -6,9 +6,18 @@ module RailsServerMonitor
 
     def show
       @server = current_server
-      @chart = RailsServerMonitor::ChartForServer.new(@server)
+      @chart = RailsServerMonitor::ChartForServer.new(@server, timeline: params[:timeline])
 
       @title = @server.display_name
+    end
+
+    def update
+      update_params = params.require(:server).permit(:custom_name, :custom_description)
+      current_server.update!(update_params)
+      redirect_to server_path(current_server)
+
+    rescue ActiveRecord::RecordInvalid => e
+      render json: { error: e.message }, status: 422
     end
 
     def current_server

@@ -1,0 +1,10 @@
+<%= content_tag :div, class: "#{@chart.today? ? "w-1/2" : "w-full"}" do %>
+  <%= line_chart @chart.render_chart %>
+
+  <div class="flex justify-between">
+    <% RailsServerMonitor::ChartForServer::AVAILABLE_TIMELINES.each do |timeline| %>
+      <%= link_to timeline.humanize, server_path(@server, timeline: timeline),
+                  class: "#{@chart.timeline == timeline ? "bg-blue-500 text-white" : "bg-gray-300 text-gray-800" } p-2 rounded hover:bg-blue-400"  %>
+    <% end %>
+  </div>
+<% end %>

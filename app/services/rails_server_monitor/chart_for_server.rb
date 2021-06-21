@@ -2,10 +2,11 @@
 
 module RailsServerMonitor
   class ChartForServer
+    AVAILABLE_TIMELINES = %w(today week month all)
     attr_reader :server, :timeline
-    def initialize(server, timeline: :today)
+    def initialize(server, timeline:)
       @server = server
-      @timeline = timeline
+      @timeline = timeline.blank? ? "today" : timeline
     end
 
     def render_chart
@@ -23,9 +24,8 @@ module RailsServerMonitor
     end
 
     def today?
-      timeline == :today
+      timeline == "today"
     end
-
 
     def last_record
       @last_record = scope.last
@@ -36,6 +36,12 @@ module RailsServerMonitor
       query = server.server_snapshots.order(id: :asc)
       if today?
         query = query.where("created_at > ?", 1.day.ago)
+      elsif timeline == "week"
+        query = query.where("created_at > ?", 7.day.ago)
+      elsif timeline == "month"
+        query = query.where("created_at > ?", 30.day.ago)
+      else
+        query = query.all
       end
       @scope = query.to_a
     end

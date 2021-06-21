@@ -3,11 +3,8 @@
    <%= @server.display_name %>
  </div>
 
-
   <div class="flex mt-4">
-    <%= content_tag :div, class: "#{@chart.today? ? "w-1/2" : "w-full"}" do %>
-      <%= line_chart @chart.render_chart %>
-    <% end %>
+    <%= render(partial: "rails_server_monitor/servers/show/chart") %>
 
     <% if @chart.today? && @chart.last_record.present? %>
       <div class="w-1/2 p-2">
@@ -49,7 +46,7 @@
     <% end %>
   </div>
 
-  <div class="mt-20">
+  <%= form_with model: @server, html: { class: "mt-20" } do |f| %>
     <div class="mb-2 text-xl">
       Sever information:
     </div>
@@ -64,13 +61,13 @@
         Custom name:
       </div>
       <div class="p-1">
-        <%= @server.custom_name %>
+        <%= f.text_field :custom_name, class: "border border-solid border-gray-200 p-2 focus:border-gray-300 w-full" %>
       </div>
       <div class="bg-blue-300 text-gray-800 p-1">
         Custom description:
       </div>
       <div class="p-1">
-        <%= @server.custom_description %>
+        <%= f.text_area :custom_description, class: "border border-solid border-gray-200 p-2 focus:border-gray-300 w-full" %>
       </div>
       <div class="mb-2 text-xl">
         OS information
@@ -129,5 +126,9 @@
         value: "#{@server.system_hdd_available_in_gb} GB"
       )) %>
     </div>
-  </div>
+
+    <div class="mt-20 w-1/2">
+      <%= f.submit "Save custom information", class: "p-2 w-full bg-blue-500 text-white" %>
+    </div>
+  <% end %>
 </div>

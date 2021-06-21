@@ -5,6 +5,7 @@ Stats can be collected from a Rack application or Sidekiq.
 [See it in action](https://rails-sever-monitor.herokuapp.com)
 
 ![demo](https://github.com/personal-social-media/rails-server-monitor/raw/master/resources/screenshot.jpg)
+![demo](https://github.com/personal-social-media/rails-server-monitor/raw/master/resources/screenshot1.jpg)
 
 ## Usage
 #### 1)
@@ -25,10 +26,23 @@ config.middleware.use RailsServerMonitor::RackMiddleware
 ```
 
 #### 4) compile Rails Server Monitor assets locally
+if you aren't using webpacker already
 ```shell
 # you don't need to do this in production, it's prepended to rake assets:precompile
 # but you need to do it again after you after you update the gem locally
-rake webpacker:compile
+rake webpacker:compile 
+
+or if you are using
+
+```ruby
+# inside bin/webpack-dev-server
+require "rails_server_monitor/compile_locally"
+RailsServerMonitor::CompileLocally.compile 
+
+# insert before this before
+# Dir.chdir(APP_ROOT) do
+#   Webpacker::DevServerRunner.run(ARGV)
+# end
 ```
 
 #### 5) (Optional) configure gem

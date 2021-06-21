@@ -20,8 +20,14 @@ module RailsServerMonitor
              foreign_key: :rails_server_monitor_server_id,
              dependent: :delete_all
 
+    before_save :squish_text
+
     def display_name
       @display_name ||= custom_name.present? ? custom_name : hostname
+    end
+
+    def squish_text
+      self.custom_name = self.custom_name&.squish
     end
   end
 end
