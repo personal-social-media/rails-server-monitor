@@ -4,7 +4,7 @@ Stats can be collected from a Rack application or Sidekiq.
 
 [See it in action](https://rails-sever-monitor.herokuapp.com)
 
-![demo](https://github.com/personal-social-media/rails-server-monitor/raw/master/resources/screenshot.jpg)
+![demo](https://github.com/personal-social-media/rails-server-monitor/raw/master/resources/screenshot-dashboard.jpg)
 ![demo](https://github.com/personal-social-media/rails-server-monitor/raw/master/resources/screenshot1.jpg)
 
 ## Usage
