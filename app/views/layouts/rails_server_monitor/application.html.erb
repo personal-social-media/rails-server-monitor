@@ -9,17 +9,22 @@
   <%= safe_render_css "rails-server-application", 'data-turbolinks-track': "reload" %>
 </head>
 <body>
+<div class="flex min-h-screen flex-col justify-between">
+  <div class="flex">
+    <div class="overflow-y-auto fixed top-0 left-0 bottom-0 bg-white w-1/5">
+      <%= render RailsServerMonitor::LeftbarComponent.new(ctx: self) %>
+    </div>
+    <div class="w-1/5 mr-4"></div>
 
-<div class="flex">
-  <div class="overflow-y-auto fixed top-0 left-0 bottom-0 bg-white w-1/5">
-    <%= render RailsServerMonitor::LeftbarComponent.new(ctx: self) %>
+    <div class="flex-1">
+      <%= yield %>
+    </div>
+
   </div>
-  <div class="w-1/5 mr-4"></div>
-
-  <div class="flex-1">
-    <%= yield %>
+  <div class="p-4 flex">
+    <div class="w-1/5 mr-4"></div>
+    <%= render "rails_server_monitor/page/footer" %>
   </div>
 </div>
-
 </body>
 </html>

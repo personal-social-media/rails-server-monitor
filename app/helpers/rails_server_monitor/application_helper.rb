@@ -25,5 +25,9 @@ module RailsServerMonitor
 
       stylesheet_pack_tag(name, **options)
     end
+
+    def server_version
+      RailsServerMonitor::VERSION
+    end
   end
 end

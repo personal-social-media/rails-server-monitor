@@ -19,7 +19,7 @@ module RailsServerMonitor
 
     private
       def hostname
-        @hostname ||= `hostname`.squish
+        @hostname ||= config.hostname.call.squish
       end
 
       def update_server
