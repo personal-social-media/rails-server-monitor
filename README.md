@@ -20,7 +20,7 @@ rails db:migrate
 ```
 
 #### 3) hook Rails Server Monitor's rack middleware
-```shell
+```ruby
 # inside config/application.rb
 config.middleware.use RailsServerMonitor::RackMiddleware
 ```
@@ -31,6 +31,7 @@ if you aren't using webpacker already
 # you don't need to do this in production, it's prepended to rake assets:precompile
 # but you need to do it again after you after you update the gem locally
 rake webpacker:compile 
+```
 
 or if you are using
 
