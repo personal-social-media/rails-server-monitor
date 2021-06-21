@@ -4,6 +4,8 @@ Stats can be collected from a Rack application or Sidekiq.
 
 [See it in action](https://rails-sever-monitor.herokuapp.com)
 
+![demo](https://github.com/personal-social-media/rails-server-monitor/raw/master/resources/screenshot.jpg)
+
 ## Usage
 #### 1)
 ```ruby
@@ -36,8 +38,8 @@ rake webpacker:compile
 
 RailsServerMonitor.config do |c|
   c.update_server_interval = 1.hour 
-  c.snapshot_server_interval = 15.minute
-  c.cleanup_snapshots_after = 30.days
+  c.snapshot_server_interval = 15.minutes
+  c.cleanup_snapshots_after = 90.days
   c.ignore_workers = %w(MyIgnoredWorker)
   c.ignore_urls = ["/", /ignored-url/]
   
@@ -46,7 +48,7 @@ RailsServerMonitor.config do |c|
   c.low_free_disk_disk_threshold = 30
   c.hostname = -> do
     `hostname`
-  end # how to retrieve server hostname
+  end # how to retrieve server hostname, heroku generates a hostname each time your app reboots
 end
 ```
 

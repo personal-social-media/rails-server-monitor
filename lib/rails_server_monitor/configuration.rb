@@ -15,7 +15,7 @@ module RailsServerMonitor
     end
 
     def cleanup_snapshots_after
-      @cleanup_snapshots_after || 30.days
+      @cleanup_snapshots_after || 90.days
     end
 
     def ignore_urls
