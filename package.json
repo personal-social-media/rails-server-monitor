@@ -51,7 +51,7 @@
     "stimulus": "^2.0.0",
     "stream-browserify": "^3.0.0",
     "style-loader": "^3.0.0",
-    "tailwindcss": "^2.2.2",
+    "tailwindcss": "^2.2.4",
     "transform-object-keys": "^1.0.7",
     "turbolinks": "^5.2.0",
     "typeface-roboto": "^1.1.13",
