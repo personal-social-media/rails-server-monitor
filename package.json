@@ -27,7 +27,7 @@
     "chokidar": "^3.5.1",
     "css-loader": "^5.2.6",
     "date-fns": "^2.22.1",
-    "eslint": "^7.29.0",
+    "eslint": "^7.30.0",
     "javascript-time-ago": "^2.3.6",
     "lodash": "^4.17.21",
     "mini-css-extract-plugin": "^1.6.2",
