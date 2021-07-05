@@ -19,7 +19,7 @@
     "@webpack-cli/serve": "^1.5.1",
     "autoprefixer": "^10.2.6",
     "axios": "^0.21.1",
-    "axios-case-converter": "^0.7.0",
+    "axios-case-converter": "^0.8.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "buffer": "^6.0.3",
     "chart.js": "^3.4.0",
