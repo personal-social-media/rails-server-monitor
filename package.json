@@ -22,7 +22,7 @@
     "axios-case-converter": "^0.7.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "buffer": "^6.0.3",
-    "chart.js": "^3.4.0",
+    "chart.js": "^3.4.1",
     "chartkick": "^4.0.4",
     "chokidar": "^3.5.1",
     "css-loader": "^5.2.6",
