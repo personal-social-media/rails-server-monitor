@@ -78,7 +78,7 @@ GEM
     bundler-audit (0.8.0)
       bundler (>= 1.2.0, < 3)
       thor (~> 1.0)
-    chartkick (4.0.4)
+    chartkick (4.0.5)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
     diff-lcs (1.4.4)
