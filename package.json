@@ -28,7 +28,7 @@
     "css-loader": "^5.2.6",
     "date-fns": "^2.22.1",
     "eslint": "^7.30.0",
-    "javascript-time-ago": "^2.3.6",
+    "javascript-time-ago": "^2.3.8",
     "lodash": "^4.17.21",
     "mini-css-extract-plugin": "^2.1.0",
     "mini-virtual-list": "^0.3.1",
