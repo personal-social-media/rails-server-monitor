@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rails-server-monitor (0.1.10)
+    rails-server-monitor (0.2.0)
       chartkick
       groupdate
       psm-ruby-stats (~> 1.0, >= 1.0.4)
@@ -84,8 +84,8 @@ GEM
     diff-lcs (1.4.4)
     erubi (1.10.0)
     ffi (1.15.3)
-    globalid (0.4.2)
-      activesupport (>= 4.2.0)
+    globalid (0.5.1)
+      activesupport (>= 5.0)
     groupdate (5.2.2)
       activesupport (>= 5)
     i18n (1.8.10)
@@ -205,7 +205,7 @@ GEM
     unicode-display_width (2.0.0)
     usagewatch (0.0.7)
     vidibus-sysinfo (1.2.0)
-    view_component (2.35.0)
+    view_component (2.36.0)
       activesupport (>= 5.0.0, < 8.0)
       method_source (~> 1.0)
     webpacker (6.0.0.pre.2)
@@ -231,4 +231,4 @@ DEPENDENCIES
   webpacker
 
 BUNDLED WITH
-   2.2.16
+   2.2.24
