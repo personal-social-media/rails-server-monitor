@@ -2,16 +2,18 @@
 
 module RailsServerMonitor
   class SidekiqMiddleware
-    def call(worker, *opts)
-      return if ignore_worker?(worker)
+    def call(worker, *_)
+      return yield if ignore_worker?(worker)
 
-      server = RailsServerMonitor::ServerSetup.new.call
-      snapshot = RailsServerMonitor::TakeSnapshot.new(server)
+      yield.tap do
+        server = RailsServerMonitor::ServerSetup.new.call
+        snapshot = RailsServerMonitor::TakeSnapshot.new(server)
 
-      if snapshot.can_take_snapshot?
-        snapshot.call
+        if snapshot.can_take_snapshot?
+          snapshot.call
 
-        RailsServerMonitor::Cleanup.new.call
+          RailsServerMonitor::Cleanup.new.call
+        end
       end
     end
 
