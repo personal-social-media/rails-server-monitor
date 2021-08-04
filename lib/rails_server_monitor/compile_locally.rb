@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "rails"
-require_relative "./engine"
+require_relative "../rails_server_monitor"
 module RailsServerMonitor
   class CompileLocally
     class << self
