@@ -3,6 +3,7 @@
 require_relative "./rails_server_monitor/version"
 require_relative "./rails_server_monitor/engine"
 require_relative "./rails_server_monitor/configuration"
+require_relative "./rails_server_monitor/compile_locally"
 require_relative "../app/middlewares/rails_server_monitor/rack_middleware"
 require "sys/cpu"
 require "rubystats_psm"

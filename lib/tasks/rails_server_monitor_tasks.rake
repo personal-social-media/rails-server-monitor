@@ -11,12 +11,7 @@ namespace :assets do
   desc "Compile rails-server-monitor JavaScript packs using webpack for production with digests"
   task rails_server_monitor_compile: [:rails_server_monitor_yarn_install, :environment] do
     Webpacker.with_node_env("production") do
-      if RailsServerMonitor.webpacker.commands.compile
-        # Successful compilation!
-      else
-        # Failed compilation
-        exit!
-      end
+      RailsServerMonitor::CompileLocally.compile
     end
   end
 end
