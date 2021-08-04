@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
-namespace :rails_server_monitor do
+namespace :assets do
   desc "Install rails-server-monitor deps with yarn"
-  task :yarn_install do
+  task :rails_server_monitor_yarn_install do
     Dir.chdir(File.join(__dir__, "..", "..")) do
       system "yarn install --no-progress --production"
     end
   end
 
   desc "Compile rails-server-monitor JavaScript packs using webpack for production with digests"
-  task compile: [:yarn_install, :environment] do
+  task rails_server_monitor_compile: [:rails_server_monitor_yarn_install, :environment] do
     Webpacker.with_node_env("production") do
       if RailsServerMonitor.webpacker.commands.compile
         # Successful compilation!
@@ -21,4 +21,6 @@ namespace :rails_server_monitor do
   end
 end
 
-task "assets:precompile" => "rails_server_monitor:compile"
+Rake::Task["assets:precompile"].enhance do
+  Rake::Task["assets:rails_server_monitor_compile"].invoke
+end
