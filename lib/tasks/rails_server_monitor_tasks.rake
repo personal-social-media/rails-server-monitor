@@ -23,4 +23,4 @@ end
 
 Rake::Task["assets:precompile"].enhance do
   Rake::Task["assets:rails_server_monitor_compile"].invoke
-end
+end if Rake::Task.task_defined?("assets:precompile")
