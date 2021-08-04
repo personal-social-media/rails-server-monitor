@@ -1,2 +1,2 @@
 web: spring stop && rm tmp/pids/* tmp/cache/* -rf; bundle exec rails s -p 3000
-webpacker: rm ../tmp/* ../public/* -rf && WEBPACKER_DEV_SERVER_HOST=localhost WEBPACKER_DEV_SERVER_PORT=8765 WEBPACKER_DEV_SERVER_PUBLIC=localhost:8765 bundle exec ../bin/webpack-dev-server
+webpacker: rm ../tmp/* ../public/* -rf && WEBPACKER_DEV_SERVER_HOST=localhost WEBPACKER_DEV_SERVER_PORT=8765 WEBPACKER_DEV_SERVER_PUBLIC=localhost:8765 KEEP_RAILS_SERVER_MONITOR_FILES=true bundle exec ../bin/webpack-dev-server

@@ -21,6 +21,7 @@ module RailsServerMonitor
       return if Dir.exist?(RailsServerMonitor::Engine.root.join("public", "rails-server-monitor-packs"))
 
       RailsServerMonitor.webpacker.commands.compile
+      FileUtils.rm_rf(RailsServerMonitor::Engine.root.join("node_modules")) if ENV["KEEP_RAILS_SERVER_MONITOR_FILES"].blank?
     end
   end
 end
