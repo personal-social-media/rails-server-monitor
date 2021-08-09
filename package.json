@@ -10,7 +10,7 @@
   ],
   "dependencies": {
     "@babel/preset-react": "^7.14.5",
-    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "@hookstate/core": "^3.0.7",
     "@rails/actioncable": "^6.1.4",
     "@rails/activestorage": "^6.1.4",
