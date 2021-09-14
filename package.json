@@ -11,7 +11,7 @@
   "dependencies": {
     "@babel/preset-react": "^7.14.5",
     "@fortawesome/fontawesome-free": "^5.15.4",
-    "@hookstate/core": "^3.0.7",
+    "@hookstate/core": "^3.0.11",
     "@rails/actioncable": "^6.1.4",
     "@rails/activestorage": "^6.1.4",
     "@rails/ujs": "^6.1.4",
@@ -23,7 +23,7 @@
     "babel-plugin-macros": "^3.1.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "buffer": "^6.0.3",
-    "chart.js": "^3.5.0",
+    "chart.js": "^3.5.1",
     "chartkick": "^4.0.5",
     "chokidar": "^3.5.1",
     "css-loader": "^6.2.0",
@@ -31,7 +31,7 @@
     "eslint": "^7.32.0",
     "javascript-time-ago": "^2.3.8",
     "lodash": "^4.17.21",
-    "mini-css-extract-plugin": "^2.2.2",
+    "mini-css-extract-plugin": "^2.3.0",
     "mini-virtual-list": "^0.3.1",
     "node-sass": "^6.0.1",
     "pluralize": "^8.0.0",
@@ -57,9 +57,9 @@
     "turbolinks": "^5.2.0",
     "typeface-roboto": "^1.1.13",
     "util": "^0.12.4",
-    "webpack": "^5.52.0",
+    "webpack": "^5.52.1",
     "webpack-cli": "^4.8.0",
-    "webpack-dev-server": "^4.1.0",
+    "webpack-dev-server": "^4.2.1",
     "ws": "^8.2.2"
   },
   "devDependencies": {
