@@ -51,7 +51,7 @@
     "sass-loader": "^12.1.0",
     "stimulus": "^2.0.0",
     "stream-browserify": "^3.0.0",
-    "style-loader": "^3.2.1",
+    "style-loader": "^3.3.0",
     "tailwindcss": "^2.2.15",
     "transform-object-keys": "^1.0.7",
     "turbolinks": "^5.2.0",
