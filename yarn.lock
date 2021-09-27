@@ -1081,10 +1081,10 @@
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.15.4.tgz#ecda5712b61ac852c760d8b3c79c96adca5554e5"
   integrity sha512-eYm8vijH/hpzr/6/1CJ/V/Eb1xQFW2nnUKArb3z+yUWv7HTwj6M7SP957oMjfZjAHU6qpoNc2wQvIxBLWYa/Jg==
 
-"@hookstate/core@^3.0.11":
-  version "3.0.11"
-  resolved "https://registry.yarnpkg.com/@hookstate/core/-/core-3.0.11.tgz#515f2748b3741f3d7e90cbc1acff8d6ac84e5494"
-  integrity sha512-cbI711aFWX4d8+xkLxikmLnR+f55ePHrBMWFA4gTLEoCa1+Cg0pfNw7h7zSodYMeYt8Y5A5TVSh7a5p8lBC89A==
+"@hookstate/core@^3.0.12":
+  version "3.0.12"
+  resolved "https://registry.yarnpkg.com/@hookstate/core/-/core-3.0.12.tgz#a59df52da7c626fd424a77c5b054c2b4a8063bad"
+  integrity sha512-hAYS29Re/3YPS9DNxHD2LKcLUVZC2XWXcx8Y2QTAcEQg9h9TYrtbJrCzPfb2fPOV5tm+pcMLS5DZl2mkD/bEyQ==
 
 "@humanwhocodes/config-array@^0.5.0":
   version "0.5.0"
