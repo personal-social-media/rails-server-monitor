@@ -1184,10 +1184,10 @@
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.15.4.tgz#ecda5712b61ac852c760d8b3c79c96adca5554e5"
   integrity sha512-eYm8vijH/hpzr/6/1CJ/V/Eb1xQFW2nnUKArb3z+yUWv7HTwj6M7SP957oMjfZjAHU6qpoNc2wQvIxBLWYa/Jg==
 
-"@hookstate/core@^3.0.12":
-  version "3.0.12"
-  resolved "https://registry.yarnpkg.com/@hookstate/core/-/core-3.0.12.tgz#a59df52da7c626fd424a77c5b054c2b4a8063bad"
-  integrity sha512-hAYS29Re/3YPS9DNxHD2LKcLUVZC2XWXcx8Y2QTAcEQg9h9TYrtbJrCzPfb2fPOV5tm+pcMLS5DZl2mkD/bEyQ==
+"@hookstate/core@^3.0.13":
+  version "3.0.13"
+  resolved "https://registry.yarnpkg.com/@hookstate/core/-/core-3.0.13.tgz#827c92166399cd4ae227d3c7ae76445e388ce3e8"
+  integrity sha512-dzx6Rz1M5/c/F1zPEspnONMUvkJD1BzepuuGkqoh+KDNhgWrklGW9OVQAuK+DZFyamCTb3/1GW2Vu4IDhXMexA==
 
 "@hotwired/stimulus@^3.0.0":
   version "3.0.0"
