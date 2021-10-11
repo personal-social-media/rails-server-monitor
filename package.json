@@ -27,7 +27,7 @@
     "chartkick": "^4.0.5",
     "chokidar": "^3.5.1",
     "css-loader": "^6.3.0",
-    "date-fns": "^2.24.0",
+    "date-fns": "^2.25.0",
     "eslint": "^7.32.0",
     "javascript-time-ago": "^2.3.9",
     "lodash": "^4.17.21",
