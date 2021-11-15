@@ -1275,8 +1275,8 @@
 
 "@rails/webpacker@https://github.com/rails/webpacker.git":
   version "6.0.0-rc.6"
-  uid a51bf1ff469f3b88a794b0f00732364d5dd506e6
-  resolved "https://github.com/rails/webpacker.git#a51bf1ff469f3b88a794b0f00732364d5dd506e6"
+  uid "9d55518ca3849a00f847cddfc1c9582ce36f0a26"
+  resolved "https://github.com/rails/webpacker.git#9d55518ca3849a00f847cddfc1c9582ce36f0a26"
   dependencies:
     "@babel/core" "^7.15.5"
     "@babel/plugin-proposal-class-properties" "^7.14.5"
