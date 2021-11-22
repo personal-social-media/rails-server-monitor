@@ -31,7 +31,7 @@
     "eslint": "^7.32.0",
     "javascript-time-ago": "^2.3.10",
     "lodash": "^4.17.21",
-    "mini-css-extract-plugin": "^2.4.4",
+    "mini-css-extract-plugin": "^2.4.5",
     "mini-virtual-list": "^0.3.1",
     "node-sass": "^6.0.1",
     "pluralize": "^8.0.0",
