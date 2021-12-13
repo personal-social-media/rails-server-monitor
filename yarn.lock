@@ -1295,19 +1295,17 @@
     webpack-merge "^5.8.0"
     webpack-sources "^3.2.1"
 
-"@react-hook/event@^1.2.2":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@react-hook/event/-/event-1.2.3.tgz#cfe86d5cf36f53e85b367ff619990d001b5c82ae"
-  integrity sha512-WMBwLnYY2rubLeecsi4skl1imfx0oiXTgazV/1ByPT6WkmLvxUao3hC+mxps5D/+JK4Fq3uG9OWU/dn5jMtXyg==
-  dependencies:
-    "@react-hook/passive-layout-effect" "^1.2.0"
+"@react-hook/event@^1.2.6":
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@react-hook/event/-/event-1.2.6.tgz#52f91578add934acc1203328ca09ab14fc7ee58e"
+  integrity sha512-JUL5IluaOdn5w5Afpe/puPa1rj8X6udMlQ9dt4hvMuKmTrBS1Ya6sb4sVgvfe2eU4yDuOfAhik8xhbcCekbg9Q==
 
 "@react-hook/latest@^1.0.2":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@react-hook/latest/-/latest-1.0.3.tgz#c2d1d0b0af8b69ec6e2b3a2412ba0768ac82db80"
   integrity sha512-dy6duzl+JnAZcDbNTfmaP3xHiKtbXYOaz3G51MGVljh548Y8MWzTr+PHLOfvpypEVW9zwvl+VyKjbWKEVbV1Rg==
 
-"@react-hook/passive-layout-effect@^1.2.0":
+"@react-hook/passive-layout-effect@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@react-hook/passive-layout-effect/-/passive-layout-effect-1.2.1.tgz#c06dac2d011f36d61259aa1c6df4f0d5e28bc55e"
   integrity sha512-IwEphTD75liO8g+6taS+4oqz+nnroocNfWVHWz7j+N+ZO2vYrc6PV1q7GQhuahL0IOR7JccFTsFKQ/mb6iZWAg==
@@ -4369,15 +4367,15 @@ mini-css-extract-plugin@^2.4.5:
   dependencies:
     schema-utils "^4.0.0"
 
-mini-virtual-list@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/mini-virtual-list/-/mini-virtual-list-0.3.1.tgz#034ca258d04f3a1202b099eb1aeb2ea7ec0e8157"
-  integrity sha512-P0gsdj97Ib5gCQx5OXusR8V6FMvw6kCBY6UxZHDSWC8v8ZpPdstXfNfCRXnspMfU+GtEL9NHFk8uliGsVpbkbg==
+mini-virtual-list@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/mini-virtual-list/-/mini-virtual-list-0.3.2.tgz#256f0d83d8883ff4abff9674f14aee387e70021c"
+  integrity sha512-NWTgjGenrnaabzTxaeYIzwovXe5V8g/GWmFGA0rP2fecPsuWz4E8UYx4qmOCeA2m+qrDHhpDlBryclGOdzwj2g==
   dependencies:
     "@essentials/memoize-one" "^1.1.0"
     "@essentials/request-timeout" "^1.3.0"
-    "@react-hook/event" "^1.2.2"
-    "@react-hook/passive-layout-effect" "^1.2.0"
+    "@react-hook/event" "^1.2.6"
+    "@react-hook/passive-layout-effect" "^1.2.1"
     "@react-hook/throttle" "^2.2.0"
 
 minimalistic-assert@^1.0.0:
