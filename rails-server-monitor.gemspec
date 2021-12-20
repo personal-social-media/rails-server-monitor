@@ -31,7 +31,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler-audit"
   spec.add_dependency "sys-cpu", "~> 1.0", ">= 1.0.3"
   spec.add_dependency "vidibus-sysinfo", "~> 1.2"
-  spec.add_dependency "rails", ">= 6.0.0", "< 7"
+  spec.add_dependency "rails", ">= 6.0.0", "< 8"
   spec.add_dependency "webpacker", ">=6.0.0.beta.7", "< 7.0.0"
   spec.add_dependency "psm-ruby-stats", "~> 1.0", ">= 1.0.4"
   spec.add_dependency "view_component"
