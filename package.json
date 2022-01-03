@@ -9,7 +9,7 @@
     "defaults"
   ],
   "dependencies": {
-    "@babel/preset-react": "^7.16.5",
+    "@babel/preset-react": "^7.16.7",
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@hookstate/core": "^3.0.13",
     "@rails/actioncable": "^7.0.0",
