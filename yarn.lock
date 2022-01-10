@@ -1296,8 +1296,8 @@
 
 "@rails/webpacker@https://github.com/rails/webpacker.git":
   version "6.0.0-rc.6"
-  uid "34942aa5be73a8013b98365bd93506389681811a"
-  resolved "https://github.com/rails/webpacker.git#34942aa5be73a8013b98365bd93506389681811a"
+  uid "6614a4fc80db202690b7f4ce6772b239c193ab63"
+  resolved "https://github.com/rails/webpacker.git#6614a4fc80db202690b7f4ce6772b239c193ab63"
   dependencies:
     "@babel/core" "^7.15.5"
     "@babel/plugin-transform-runtime" "^7.15.0"
