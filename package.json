@@ -35,7 +35,7 @@
     "mini-virtual-list": "^0.3.2",
     "node-sass": "^7.0.1",
     "pluralize": "^8.0.0",
-    "postcss": "^8.4.5",
+    "postcss": "^8.4.6",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^14.0.1",
     "postcss-loader": "^6.2.1",
