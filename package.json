@@ -14,7 +14,7 @@
     "@hookstate/core": "^3.0.13",
     "@rails/actioncable": "^7.0.2",
     "@rails/activestorage": "^7.0.2",
-    "@rails/ujs": "^7.0.1",
+    "@rails/ujs": "^7.0.2",
     "@rails/webpacker": "https://github.com/rails/webpacker.git",
     "@webpack-cli/serve": "^1.6.0",
     "autoprefixer": "^10.4.2",
