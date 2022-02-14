@@ -13,7 +13,7 @@
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@hookstate/core": "^3.0.13",
     "@rails/actioncable": "^7.0.1",
-    "@rails/activestorage": "^7.0.1",
+    "@rails/activestorage": "^7.0.2",
     "@rails/ujs": "^7.0.1",
     "@rails/webpacker": "https://github.com/rails/webpacker.git",
     "@webpack-cli/serve": "^1.6.0",
@@ -23,13 +23,13 @@
     "babel-plugin-macros": "^3.1.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "buffer": "^6.0.3",
-    "chart.js": "^3.7.0",
+    "chart.js": "^3.7.1",
     "chartkick": "^4.1.1",
     "chokidar": "^3.5.3",
     "css-loader": "^6.6.0",
     "date-fns": "^2.28.0",
     "eslint": "^7.32.0",
-    "javascript-time-ago": "^2.3.11",
+    "javascript-time-ago": "^2.3.13",
     "lodash": "^4.17.21",
     "mini-css-extract-plugin": "^2.5.3",
     "mini-virtual-list": "^0.3.2",
@@ -60,7 +60,7 @@
     "webpack": "^5.68.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4",
-    "ws": "^8.4.2"
+    "ws": "^8.5.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
