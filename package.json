@@ -57,7 +57,7 @@
     "turbolinks": "^5.2.0",
     "typeface-roboto": "^1.1.13",
     "util": "^0.12.4",
-    "webpack": "^5.69.1",
+    "webpack": "^5.70.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4",
     "ws": "^8.5.0"
