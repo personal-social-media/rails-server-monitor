@@ -47,7 +47,7 @@
     "react-textarea-autosize": "^8.3.3",
     "react-use": "^17.3.2",
     "react_ujs": "^2.6.1",
-    "sass": "^1.49.9",
+    "sass": "^1.49.11",
     "sass-loader": "^12.6.0",
     "stimulus": "^3.0.1",
     "stream-browserify": "^3.0.0",
