@@ -16,7 +16,7 @@
     "@rails/activestorage": "^7.0.3",
     "@rails/ujs": "^7.0.3",
     "@rails/webpacker": "https://github.com/rails/webpacker.git",
-    "@webpack-cli/serve": "^1.6.0",
+    "@webpack-cli/serve": "^1.7.0",
     "autoprefixer": "^10.4.7",
     "axios": "^0.21.2",
     "axios-case-converter": "^0.8.1",
