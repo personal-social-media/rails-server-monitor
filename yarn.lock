@@ -1597,7 +1597,7 @@
   dependencies:
     "@types/express" "*"
 
-"@types/serve-static@*":
+"@types/serve-static@*", "@types/serve-static@^1.13.10":
   version "1.13.10"
   resolved "https://registry.yarnpkg.com/@types/serve-static/-/serve-static-1.13.10.tgz#f5e0ce8797d2d7cc5ebeda48a52c96c4fa47a8d9"
   integrity sha512-nCkHGI4w7ZgAdNkrEu0bv+4xNV/XDqW+DydknebMOQwkpDGx8G+HTlj7R7ABI8i8nKxVw0wtKPi1D+lPOkh4YQ==
@@ -6013,10 +6013,10 @@ sass-loader@^13.0.0:
     klona "^2.0.4"
     neo-async "^2.6.2"
 
-sass@^1.52.2:
-  version "1.52.2"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.52.2.tgz#cd1f03e0e7be5bb2cebcf1c34d735f087d790936"
-  integrity sha512-mfHB2VSeFS7sZlPv9YohB9GB7yWIgQNTGniQwfQ04EoQN0wsQEv7SwpCwy/x48Af+Z3vDeFXz+iuXM3HK/phZQ==
+sass@^1.52.3:
+  version "1.52.3"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.52.3.tgz#b7cc7ffea2341ccc9a0c4fd372bf1b3f9be1b6cb"
+  integrity sha512-LNNPJ9lafx+j1ArtA7GyEJm9eawXN8KlA1+5dF6IZyoONg1Tyo/g+muOsENWJH/2Q1FHbbV4UwliU0cXMa/VIA==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"
@@ -7033,15 +7033,16 @@ webpack-dev-middleware@^5.3.1:
     range-parser "^1.2.1"
     schema-utils "^4.0.0"
 
-webpack-dev-server@^4.9.1:
-  version "4.9.1"
-  resolved "https://registry.yarnpkg.com/webpack-dev-server/-/webpack-dev-server-4.9.1.tgz#184607b0287c791aeaa45e58e8fe75fcb4d7e2a8"
-  integrity sha512-CTMfu2UMdR/4OOZVHRpdy84pNopOuigVIsRbGX3LVDMWNP8EUgC5mUBMErbwBlHTEX99ejZJpVqrir6EXAEajA==
+webpack-dev-server@^4.9.2:
+  version "4.9.2"
+  resolved "https://registry.yarnpkg.com/webpack-dev-server/-/webpack-dev-server-4.9.2.tgz#c188db28c7bff12f87deda2a5595679ebbc3c9bc"
+  integrity sha512-H95Ns95dP24ZsEzO6G9iT+PNw4Q7ltll1GfJHV4fKphuHWgKFzGHWi4alTlTnpk1SPPk41X+l2RB7rLfIhnB9Q==
   dependencies:
     "@types/bonjour" "^3.5.9"
     "@types/connect-history-api-fallback" "^1.3.5"
     "@types/express" "^4.17.13"
     "@types/serve-index" "^1.9.1"
+    "@types/serve-static" "^1.13.10"
     "@types/sockjs" "^0.3.33"
     "@types/ws" "^8.5.1"
     ansi-html-community "^0.0.8"
