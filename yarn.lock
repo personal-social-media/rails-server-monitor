@@ -4237,10 +4237,10 @@ isstream@~0.1.2:
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
-javascript-time-ago@^2.5.5:
-  version "2.5.5"
-  resolved "https://registry.yarnpkg.com/javascript-time-ago/-/javascript-time-ago-2.5.5.tgz#5487015c59c7115c6281548e627be4ee6f6376a8"
-  integrity sha512-vZWIEKTPDcxH2B+ZVBK4AIuHkDcUoV80L9d+1WsRmp68hMXym0cQrf45WCP4mKgZjVGxTio7uYeDTkveX3DzlA==
+javascript-time-ago@^2.5.6:
+  version "2.5.6"
+  resolved "https://registry.yarnpkg.com/javascript-time-ago/-/javascript-time-ago-2.5.6.tgz#1a7a381dc2acbe8201a18a72dcb78782bbef4c63"
+  integrity sha512-uqnLU334Dtu6lC2pIOnPyH8GkG0UnSlDLD19sfEaAITIg5zR3x0O0MkFYJEVXtY4Q9JWOcxFJoXoxxT5/B5Okg==
   dependencies:
     relative-time-format "^1.1.4"
 
