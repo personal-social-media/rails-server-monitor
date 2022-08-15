@@ -217,7 +217,7 @@ GEM
     semantic_range (3.0.0)
     sqlite3 (1.4.4)
     strscan (3.0.3)
-    sys-cpu (1.0.4)
+    sys-cpu (1.0.6)
       ffi (~> 1.1)
     thor (1.2.1)
     timeout (0.3.0)
