@@ -13,11 +13,11 @@
     "@fortawesome/fontawesome-free": "^6.2.0",
     "@hookstate/core": "^3.0.13",
     "@rails/actioncable": "^7.0.4",
-    "@rails/activestorage": "^7.0.3",
+    "@rails/activestorage": "^7.0.4",
     "@rails/ujs": "^7.0.3",
     "@rails/webpacker": "https://github.com/rails/webpacker.git",
     "@webpack-cli/serve": "^1.7.0",
-    "autoprefixer": "^10.4.8",
+    "autoprefixer": "^10.4.9",
     "axios": "^0.21.2",
     "axios-case-converter": "^0.8.1",
     "babel-plugin-macros": "^3.1.0",
@@ -59,7 +59,7 @@
     "util": "^0.12.4",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.10.1",
+    "webpack-dev-server": "^4.11.0",
     "ws": "^8.8.1"
   },
   "devDependencies": {
@@ -67,7 +67,7 @@
     "eslint-config-google": "^0.14.0",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-autofix": "^1.0.5",
-    "eslint-plugin-react": "^7.31.6",
+    "eslint-plugin-react": "^7.31.8",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
     "eslint-plugin-sort-keys-fix": "^1.1.2"
