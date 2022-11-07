@@ -29,7 +29,7 @@
     "css-loader": "^6.7.1",
     "date-fns": "^2.29.3",
     "eslint": "^7.32.0",
-    "javascript-time-ago": "^2.5.7",
+    "javascript-time-ago": "^2.5.9",
     "lodash": "^4.17.21",
     "mini-css-extract-plugin": "^2.6.1",
     "mini-virtual-list": "^0.3.2",
