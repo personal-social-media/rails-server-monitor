@@ -226,7 +226,7 @@ GEM
     unicode-display_width (2.2.0)
     usagewatch (0.0.7)
     vidibus-sysinfo (1.2.0)
-    view_component (2.76.0)
+    view_component (2.77.0)
       activesupport (>= 5.0.0, < 8.0)
       concurrent-ruby (~> 1.0)
       method_source (~> 1.0)
