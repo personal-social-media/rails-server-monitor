@@ -49,7 +49,7 @@
     "react_ujs": "^2.6.2",
     "sass": "^1.56.1",
     "sass-loader": "^13.2.0",
-    "stimulus": "^3.2.0",
+    "stimulus": "^3.2.1",
     "stream-browserify": "^3.0.0",
     "style-loader": "^3.3.1",
     "tailwindcss": "^3.2.4",
