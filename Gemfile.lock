@@ -213,7 +213,7 @@ GEM
       rubocop-rails (~> 2.0)
     ruby-progressbar (1.11.0)
     semantic_range (3.0.0)
-    sqlite3 (1.6.2-x86_64-linux)
+    sqlite3 (1.6.3-x86_64-linux)
     sys-cpu (1.0.6)
       ffi (~> 1.1)
     thor (1.2.1)
