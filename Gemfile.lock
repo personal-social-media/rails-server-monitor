@@ -109,7 +109,7 @@ GEM
     marcel (1.0.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    minitest (5.18.0)
+    minitest (5.18.1)
     net-imap (0.3.4)
       date
       net-protocol
@@ -224,7 +224,7 @@ GEM
     unicode-display_width (2.2.0)
     usagewatch (0.0.7)
     vidibus-sysinfo (1.2.0)
-    view_component (3.1.0)
+    view_component (3.2.0)
       activesupport (>= 5.2.0, < 8.0)
       concurrent-ruby (~> 1.0)
       method_source (~> 1.0)
