@@ -246,7 +246,7 @@ GEM
     ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.5)
     semantic_range (3.0.0)
-    sqlite3 (1.6.7-x86_64-linux)
+    sqlite3 (1.6.8-x86_64-linux)
     stringio (3.0.8)
     sys-cpu (1.0.6)
       ffi (~> 1.1)
